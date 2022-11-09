@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            Admin
+        </title>
+
+        {% load static %}
+        <link rel="stylesheet" type = "text/css" href="{% static 'website/styles/bootstrap.min.css' %}">
+        <link rel="stylesheet" type = "text/css" href="{% static 'website/styles/admin.css' %}">
+     </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
+            <div class="navbar-brand">
+                Fakescore
+            </div>
+                    
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://" target="_blank" rel="noopener noreferrer">
+                            
+                            Home
+                            
+                            <span class="sr-only">
+                            (Current)
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">
+                            URLS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">
+                            Articles
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">
+                            Domains
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="navbar-text">
+                Admin
+            </div>
+        </nav>
+        
+
+        <div class="container-fluid" id="main_wrapper">
+            <!-- url entries [ue] -->
+            <div class="row justify-content-around">
+                <div class="col-5 content-section latest rounded border border-gray shadow p-3" id="article-latest">
+
+                    <h4 class="font-weight-bold">Article Reported</h3>
+                    <table class="table rounded-90  ">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    Article Content
+                                </th>
+                                <th>
+                                    Fakescore
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. 
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. 
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. 
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                       
+                    </table>
+
+                </div>
+                <div class="col-5 content-section latest rounded border 
+                 shadow p-3" id="url_latest">
+                    <h4 class="font-weight-bold">URL Reported</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    URL
+                                </th>
+                                <th>
+                                    Fakescore
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+            </div>
+
+            <div class="row justify-content-around top-buffer">
+                
+                <div class="col-11 content-section rounded border border-gray p-3" id="articles">
+                    <h4 class="font-weight-bold">Articles</h3>
+                    <table class="table" id="fixed-header1">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    Article Content
+                                </th>
+                                <th>
+                                    Fakescore
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    04/02/2019 12:12
+                                </td>
+                                <td>
+                                    <p class="text-justify .text-truncate">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque maximus vestibulum lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec mattis vel neque eu ornare. Sed molestie, velit in iaculis blandit, ex magna mollis erat, ut semper tortor lacus sit amet nisi. Fusce felis felis, dapibus quis efficitur condimentum, ullamcorper non felis. Nulla porttitor viverra erat, at ultricies ante mollis et. Ut in placerat quam. Integer et fermentum nulla. Vivamus gravida sem ut nibh gravida viverra. Suspendisse consectetur, leo ac consectetur sodales, est dui tincidunt urna, vitae sagittis ligula mauris tincidunt justo. Nulla a urna sed neque commodo pretium. Integer at velit sit amet est auctor semper. 
+                                    </p>
+                                </td>
+                                <td>
+                                    97.5%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    04/02/2019 12:12
+                                </td>
+                                <td>
+                                    <p class="text-justify .text-truncate">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque maximus vestibulum lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec mattis vel neque eu ornare. Sed molestie, velit in iaculis blandit, ex magna mollis erat, ut semper tortor lacus sit amet nisi. Fusce felis felis, dapibus quis efficitur condimentum, ullamcorper non felis. Nulla porttitor viverra erat, at ultricies ante mollis et. Ut in placerat quam. Integer et fermentum nulla. Vivamus gravida sem ut nibh gravida viverra. Suspendisse consectetur, leo ac consectetur sodales, est dui tincidunt urna, vitae sagittis ligula mauris tincidunt justo. Nulla a urna sed neque commodo pretium. Integer at velit sit amet est auctor semper. 
+                                    </p>
+                                </td>
+                                <td>
+                                    97.5%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    04/02/2019 12:12
+                                </td>
+                                <td>
+                                    <p class="text-justify .text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices nulla at dui cursus, ac faucibus magna placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque maximus vestibulum lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec mattis vel neque eu ornare. Sed molestie, velit in iaculis blandit, ex magna mollis erat, ut semper tortor lacus sit amet nisi. Fusce felis felis, dapibus quis efficitur condimentum, ullamcorper non felis. Nulla porttitor viverra erat, at ultricies ante mollis et. Ut in placerat quam. Integer et fermentum nulla. Vivamus gravida sem ut nibh gravida viverra. Suspendisse consectetur, leo ac consectetur sodales, est dui tincidunt urna, vitae sagittis ligula mauris tincidunt justo. Nulla a urna sed neque commodo pretium. Integer at velit sit amet est auctor semper. 
+                                    </p>
+                                </td>
+                                <td>
+                                    97.5%
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-around top-buffer">
+                
+                <div class="col-5 content-section latest rounded border border-gray shadow p-3" id="url_latest">
+                    <h4 class="font-weight-bold">URL Reported</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    URL
+                                </th>
+                                <th>
+                                    Fakescore
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+                <div class="col-5 content-section latest rounded border border-gray shadow p-3" id="url_latest">
+                    <h4 class="font-weight-bold">URL Reported</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    URL
+                                </th>
+                                <th>
+                                    Fakescore
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                04/02/2019 12:12
+                            </td>
+                            <td>
+                                <p class="text-justify .text-truncate">
+                                    https://www.example.com/
+                                </p>
+                            </td>
+                            <td>
+                                97.5%
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="{% static 'website/js/jquery-3.4.1.min.js' %}"></script>
+        <script src="{% static 'website/js/popper.min.js' %}"></script>
+        <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'website/js/jquery.dataTables.min.js'%}" ></script>
+        <script src="{% static 'website/js/admin.js'%}" ></script>
+
+    </body>
+    
+</html>
